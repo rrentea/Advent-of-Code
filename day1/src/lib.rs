@@ -23,9 +23,9 @@ pub fn process_part2(input: &str) -> String {
         })
         .collect::<Vec<_>>();
 
-        result.sort_by(|a, b| b.cmp(a));
-        let sum: u32 = result.iter().take(3).sum();
-        sum.to_string()
+    result.sort_by(|a, b| b.cmp(a));
+    let sum: u32 = result.iter().take(3).sum();
+    sum.to_string()
 }
 
 #[cfg(test)]
